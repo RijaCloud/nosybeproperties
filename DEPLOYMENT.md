@@ -54,3 +54,8 @@ La configuration Nginx fournie sert ces fichiers sans regle supplementaire.
 Le composant JavaScript local inclut la suppression des boutons promotionnels.
 Ses dependances Framer restent chargees depuis leur CDN d'origine ; cette
 copie du site ne constitue donc pas une version entierement hors ligne.
+
+Le script de statistiques Framer a ete retire des pages : sa copie locale
+calculait son point de collecte a partir du domaine du site et provoquait
+un POST /anonymous en erreur. Les imports JavaScript statiques et dynamiques
+du composant local pointent vers les modules disponibles sur le CDN Framer.
